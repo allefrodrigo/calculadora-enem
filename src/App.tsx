@@ -179,6 +179,57 @@ const universities = [
 },
     ],
   },
+  {
+    code: "003",
+    name: "UERN",
+    campus: [
+      { name: "Mossoró", code: "002",
+      courses: [
+        { name: "Administração", peso_cie: 1, peso_hum: 3, peso_lin: 3, peso_mat: 3, peso_red: 3 },
+        { name: "Ciência da Computação", peso_cie: 3, peso_hum: 1, peso_lin: 3, peso_mat: 1, peso_red: 3 },
+        { name: "Ciências Biológicas", peso_cie: 3, peso_hum: 1, peso_lin: 3, peso_mat: 1, peso_red: 3 },
+        { name: "Ciências Contábeis", peso_cie: 1, peso_hum: 3, peso_lin: 3, peso_mat: 3, peso_red: 3 },
+        { name: "Ciências Econômicas", peso_cie: 1, peso_hum: 3, peso_lin: 3, peso_mat: 3, peso_red: 3  },
+        { name: "Ciências Sociais", peso_cie: 1, peso_hum: 3, peso_lin: 3, peso_mat: 1, peso_red: 3  },
+        { name: "Comunicação Social - Radialismo", peso_cie: 3, peso_hum: 3, peso_lin: 1, peso_mat: 1, peso_red: 3 },
+        { name: "Direito", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+        // { name: "Educação Física", peso_cie: 1, peso_hum: 3, peso_lin: 3, peso_mat: 1, peso_red: 3 },
+        // { name: "Enfermagem", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+        // { name: "Filosofia", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+        // { name: "Física", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+        // { name: "Geografia", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+        // { name: "Gestão Ambiental", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+        // { name: "História", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+        // { name: "Jornalismo", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+        // { name: "Letras - Espanhol", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+        // { name: "Letras - Inglês", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+        // { name: "Letras - Língua Portuguesa", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+        // { name: "Matemática", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+        // { name: "Medicina", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+        // { name: "Música", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+        // { name: "Pedagogia", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+        // { name: "Publicidade e Propaganda", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+        // { name: "Química", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+        // { name: "Serviço Social", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+        // { name: "Turismo", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+        // { name: "Educação Física", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+        // { name: "Enfermagem", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+        // { name: "Física", peso_cie: 1, peso_hum: 0, peso_lin: 0, peso_mat: 1, peso_red: 0 },
+        // { name: "Química", peso_cie: 1, peso_hum: 0, peso_lin: 0, peso_mat: 1, peso_red: 0 },
+        // { name: "Ciência da Computação", peso_cie: 1, peso_hum: 0, peso_lin: 0, peso_mat: 1, peso_red: 1 },
+        // { name: "Música", peso_cie: 0, peso_hum: 1, peso_lin: 0, peso_mat: 0, peso_red: 0 },
+        // { name: "Gestão Ambiental", peso_cie: 1, peso_hum: 0, peso_lin: 0, peso_mat: 1, peso_red: 0 },
+        // { name: "Turismo", peso_cie: 0, peso_hum: 1, peso_lin: 0, peso_mat: 0, peso_red: 1 },
+        // { name: "Educação Física", peso_cie: 0, peso_hum: 1, peso_lin: 0, peso_mat: 0, peso_red: 0 },
+        // { name: "Ciências Sociais", peso_cie: 1, peso_hum: 1, peso_lin: 0, peso_mat: 0, peso_red: 0 },
+        // { name: "ABI - Educação Física", peso_cie: 0, peso_hum: 1, peso_lin: 0, peso_mat: 0, peso_red: 0 },
+        // { name: "Geografia", peso_cie: 1, peso_hum: 1, peso_lin: 0, peso_mat: 0, peso_red: 0 }
+
+    
+      ]
+      }
+  ]
+  }
 ];
 
 interface University {
@@ -320,7 +371,7 @@ function App() {
         src={banner}
       />
 
-<Grid container spacing={3}>
+<Grid container spacing={3} >
 
  <Box padding={1}   display='flex' width={'100%'} alignItems="center" justifyContent={'space-between'}>
 
