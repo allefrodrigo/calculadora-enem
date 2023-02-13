@@ -115,6 +115,13 @@ function App() {
       nota: 0,
     },
   ]);
+  
+  const [allNotesFilled, setAllNotesFilled] = useState(false);
+  
+  useEffect(() => {
+    const areAllNotesFilled = notas.every(note => note.nota > 0);
+    setAllNotesFilled(areAllNotesFilled);
+  }, [notas]);
 
 
 
@@ -122,8 +129,8 @@ function App() {
   const [selectedCampus, setSelectedCampus] = useState("");
 
   const [selectedCourse, setSelectedCourse] = useState("");
-
-
+  const [error, setError] = useState(false)
+  const [notaCalculada, setNotaCalculada] = useState(false)
 
 
   
@@ -153,6 +160,7 @@ function App() {
     acumulador += notas[4].nota * selectedCourseObject.peso_lin;
     const media = acumulador / pesoNotas;
     console.log(media);
+    setNotaCalculada(true)
     setResultado(media);
   };
 
@@ -162,6 +170,13 @@ function App() {
   const onChange = (index:any) => (event:any) => {
     const inputValue = event.target.value;
     const decimalRegExp = /^\d+(\.\d{1,2})?$/;
+    
+    if (event.target.value < 0 || event.target.value > 1000) {
+      setError(true);
+    } else {
+      setError(false);
+    }
+
     if (decimalRegExp.test(inputValue)) {
       setNotas(
         notas.map((nota, i) => {
@@ -207,7 +222,7 @@ function App() {
                   </TableCell>
                   <TableCell>
                     <TextField
-                    
+                    error={error}
                     sx={{ width: '80%'}}
                       inputRef={notas[index].nota === 0 ? inputRef1 : notas[index].nota === 1 ? inputRef2 : notas[index].nota === 2 ? inputRef3 : notas[index].nota === 3 ? inputRef4 : inputRef5}
                       size="small"
@@ -297,8 +312,8 @@ function App() {
   <Select
     labelId="select-course-label"
     id="select-course"
-    value={selectedCourse}
-    onChange={(e) => (setSelectedCourse(e.target.value), onClickCalculate())}
+    value={selectedCourse || ""}
+    onChange={(e) => (setSelectedCourse(e.target.value))}
     disabled={!selectedCampus}
   >
     {universities
@@ -312,12 +327,15 @@ function App() {
   </Select>
 </FormControl>
   </Box>
+  { selectedCourse !== "" ? (
+  <Button disabled={!allNotesFilled} onClick={onClickCalculate} variant="contained" style={{color: "white", marginTop: 10 }}>Calcular</Button>) : null}
+  
 </Box>
 
 
 ) : null}
 
-{selectedCourse !== "" ? (
+{notaCalculada === true ? (
 
 
   <Box display="flex" flexDirection="column">
