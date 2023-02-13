@@ -193,6 +193,8 @@ const universities = [
         { name: "Ciências Sociais", peso_cie: 1, peso_hum: 3, peso_lin: 3, peso_mat: 1, peso_red: 3  },
         { name: "Comunicação Social - Radialismo", peso_cie: 3, peso_hum: 3, peso_lin: 1, peso_mat: 1, peso_red: 3 },
         { name: "Direito", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+       { name: "Medicina", peso_cie: 3, peso_hum: 1, peso_lin: 3, peso_mat: 1, peso_red: 3 },
+
         // { name: "Educação Física", peso_cie: 1, peso_hum: 3, peso_lin: 3, peso_mat: 1, peso_red: 3 },
         // { name: "Enfermagem", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
         // { name: "Filosofia", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
@@ -205,7 +207,6 @@ const universities = [
         // { name: "Letras - Inglês", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
         // { name: "Letras - Língua Portuguesa", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
         // { name: "Matemática", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
-        // { name: "Medicina", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
         // { name: "Música", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
         // { name: "Pedagogia", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
         // { name: "Publicidade e Propaganda", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
