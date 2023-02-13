@@ -9,8 +9,7 @@ import { MenuItem,Select, Box, Table,
   Grid,
   Paper,
   TableRow,
-   TextField, Button, Typography, FormControl, InputLabel } from '@mui/material';
-
+   TextField, Button, Typography, FormControl, InputLabel, useMediaQuery } from '@mui/material';
 
 
 
@@ -91,6 +90,7 @@ interface University {
 function App() {
 
 
+  const matches = useMediaQuery('(min-width:600px)');
 
   const [universidades, setUniversidades] = useState<University[]>([]);
 
@@ -211,9 +211,12 @@ function App() {
         src={banner}
       />
 
+<Grid container spacing={3}>
+
  <Box padding={1}   display='flex' width={'100%'} alignItems="top" justifyContent={'space-between'}>
 
-    <Box  flexDirection='row' display='flex'  alignItems="top" justifyContent={'space-between'}>
+    <Box  flexDirection={matches ? 'row' : 'column'} display='flex'  alignItems={matches ? 'top' : 'center'}justifyContent={'space-between'}>
+    
     <Box margin={1} flexDirection='column' display='flex'alignItems="top">
     <Typography align='left' sx={{ color: "white", fontWeight: 300, fontSize: 20 }}>Por favor, insira a nota do ENEM 2022</Typography>
 
@@ -365,6 +368,7 @@ function App() {
       </Box>
     </Box>
  </Box>
+ </Grid>
  
 </form>
 
