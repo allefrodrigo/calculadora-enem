@@ -298,7 +298,7 @@ function App() {
     labelId="select-course-label"
     id="select-course"
     value={selectedCourse}
-    onChange={(e) => setSelectedCourse(e.target.value)}
+    onChange={(e) => (setSelectedCourse(e.target.value), onClickCalculate())}
     disabled={!selectedCampus}
   >
     {universities
@@ -317,9 +317,20 @@ function App() {
 
 ) : null}
 
-<Button variant="contained" onClick={() => {onClickCalculate()}} style={{ background: "#FF0000", color: "white", marginTop: 10, marginBottom: 10, width: '100%' }}>
-  calcular
-</Button>
+{selectedCourse !== "" ? (
+
+
+  <Box display="flex" flexDirection="column">
+
+  <Typography align="left" style={{ color: "white", fontWeight: 300, fontSize: 20 }}>Sua nota para este curso ficou:</Typography>
+  <Box border={1} style={{ background: "#FFFF", borderRadius: 1 }} display="flex" flexDirection="column">
+  <Typography padding={1} align="center" style={{ color: "black", fontWeight: 500, fontSize: 52 }}>{resultado}</Typography>
+    </Box>
+</Box>  
+
+) : null}
+
+
 
       </Box>
     </Box>
