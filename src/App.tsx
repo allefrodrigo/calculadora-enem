@@ -73,28 +73,56 @@ const universities = [
     code: "002",
     name: "UFC",
     campus: [
-    //   { name: "Fortaleza", code: "002",
-    //   courses: [
+      { name: "Fortaleza", code: "002",
+      courses: [
        
-    //     {name: "Administração", peso_cie: 1.0, peso_hum: 3.0, peso_lin: 2.0, peso_mat: 2.0, peso_red: 2.0},
-    //     {name: "Agronomia", peso_cie: 3.0, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 3.0, peso_red: 1.5},
-    //     {name: "Biotecnologia", peso_cie: 3.0, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 3.0, peso_red: 1.5},
-    //     {name: "Ciência da Computação", peso_cie: 1.0, peso_hum: 2.5, peso_lin: 3.5, peso_mat: 1.5, peso_red: 1.5},
-    //     { name: "Ciências Contábeis", peso_cie: 1.0, peso_hum: 3.5, peso_lin: 1.0, peso_mat: 2.5, peso_red: 2.0 },
-    //     { name: "Direito", peso_cie: 1.0, peso_hum: 2.5, peso_lin: 2.5, peso_mat: 1.0, peso_red: 3.0 },
-    //     { name: "Ecologia", peso_cie: 3.5, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 2.5, peso_red: 1.5 },
-    //     { name: "Engenharia Agrícola e Ambiental", peso_cie: 3.0, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 3.0, peso_red: 1.5 },
-    //     { name: "Engenharia de Pesca", peso_cie: 4.0, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 2.0, peso_red: 1.5 },
-    //     { name: "Engenharia de Petróleo", peso_cie: 3.0, peso_hum: 1.0, peso_lin: 1.0, peso_mat: 3.0, peso_red: 2.0 },
-    //     {name: "Engenharia Florestal", peso_cie: 3.0, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 3.0, peso_red: 1.5},
-    //     { name: "Interdisciplinar em Ciência e Tecnologia", peso_cie: 2.5, peso_hum: 1.0, peso_lin: 2.0, peso_mat: 3.0, peso_red: 1.5},
-    //     { name: "Medicina", peso_cie: 3.5, peso_hum: 2.0, peso_lin: 2.0, peso_mat: 1.0, peso_red: 1.5},
-    //     { name: "Medicina Veterinária", peso_cie: 4.0, peso_hum: 2.0, peso_lin: 1.5, peso_mat: 1.0, peso_red: 1.5},
-    //     { name: "Zootecnia", peso_cie: 3.5, peso_hum: 1.0, peso_lin: 2.0, peso_mat: 1.5, peso_red: 2.0 },
+        { name: "Administração", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+        { name: "Agronomia", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+        { name: "Arquitetura e Urbanismo", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+        { name: "Biotecnologia", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+        { name: "Ciências Ambientais", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+        { name: "Ciências Atuariais", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+        { name: "Ciências Biológicas", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+        { name: "Ciências Contábeis", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+        { name: "Ciências Econômicas", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+        {name: "Ciências Sociais", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Cinema e Audiovisual", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Computação", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Comunicação Social", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Dança", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Design", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Direito", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Educação Física", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Enfermagem", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Engenharia", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Estatística", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Farmácia", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Filosofia", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Finanças", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Física", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Fisioterapia", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Gastronomia", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Geografia", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Geologia", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Gestão de Políticas Públicas", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "História", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Letras", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Matemática", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Medicina", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Música", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Oceanografia", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Odontologia", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Pedagogia", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Psicologia", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Química", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Secretariado Executivo", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Sistemas e Mídias Digitais", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Teatro", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Zootecnia", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
 
-    //   ]
+      ]
     
-    // },
+    },
       { name: "Sobral", code: "003",
       courses: [
         {name: "Ciências Econômicas", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
@@ -287,19 +315,19 @@ function App() {
 <form  >
 <Box
         component="img"
-        width={'50%'}
+        width={matches ? '50%' : '100%'}
         alt="The house from the offer."
         src={banner}
       />
 
 <Grid container spacing={3}>
 
- <Box padding={1}   display='flex' width={'100%'} alignItems="top" justifyContent={'space-between'}>
+ <Box padding={1}   display='flex' width={'100%'} alignItems="center" justifyContent={'space-between'}>
 
     <Box  flexDirection={matches ? 'row' : 'column'} display='flex'  alignItems={matches ? 'top' : 'center'}justifyContent={'space-between'}>
     
     <Box margin={1} flexDirection='column' display='flex'alignItems="top">
-    <Typography align='left' sx={{ color: "white", fontWeight: 300, fontSize: 20 }}>Por favor, insira a nota do ENEM 2022</Typography>
+    <Typography align='left' sx={{ color: "white", fontWeight: 300, fontSize: 18 }}>Por favor, insira a nota do ENEM 2022</Typography>
 
       <Box border={1}   sx={{background: '#FFFF', borderRadius: 1 }} display='flex'  flexDirection="column" >
 
