@@ -263,7 +263,7 @@ function App() {
 
       </Box>
 
-      <Box margin={1} flexDirection='column' display='flex' width={'40%'} alignItems="top">
+      <Box margin={1} flexDirection='column' display='flex' width={matches ? ('40%'):('80%')} alignItems="top">
         <Box  display='flex'  flexDirection="column"   >
           <Typography align='left' sx={{ color: "white", fontWeight: 300, fontSize: 20 }}>Selecione uma universidade</Typography>
           <Box border={1} sx={{background: '#FFFF', borderRadius: 1 }} display='flex'  flexDirection="column"  >
@@ -356,8 +356,8 @@ function App() {
   <Box display="flex" flexDirection="column">
 
   <Typography align="left" style={{ color: "white", fontWeight: 300, fontSize: 20 }}>Sua nota para este curso ficou:</Typography>
-  <Box border={1} style={{ background: "#FFFF", borderRadius: 1 }} display="flex" flexDirection="column">
-  <Typography padding={1} align="center" style={{ color: "black", fontWeight: 500, fontSize: 52 }}>{resultado}</Typography>
+  <Box border={1} padding={1} style={{ background: "#FFFF", borderRadius: 1 }} width={'100%'} display="flex" flexDirection="column">
+  <Typography  align="center" style={{ color: "black", fontWeight: 500, fontSize: 40 }}>{resultado}</Typography>
     </Box>
 </Box>  
 
