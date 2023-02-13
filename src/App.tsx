@@ -68,7 +68,88 @@ const universities = [
   
   },
     ],
+  },
+  {
+    code: "002",
+    name: "UFC",
+    campus: [
+    //   { name: "Fortaleza", code: "002",
+    //   courses: [
+       
+    //     {name: "Administração", peso_cie: 1.0, peso_hum: 3.0, peso_lin: 2.0, peso_mat: 2.0, peso_red: 2.0},
+    //     {name: "Agronomia", peso_cie: 3.0, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 3.0, peso_red: 1.5},
+    //     {name: "Biotecnologia", peso_cie: 3.0, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 3.0, peso_red: 1.5},
+    //     {name: "Ciência da Computação", peso_cie: 1.0, peso_hum: 2.5, peso_lin: 3.5, peso_mat: 1.5, peso_red: 1.5},
+    //     { name: "Ciências Contábeis", peso_cie: 1.0, peso_hum: 3.5, peso_lin: 1.0, peso_mat: 2.5, peso_red: 2.0 },
+    //     { name: "Direito", peso_cie: 1.0, peso_hum: 2.5, peso_lin: 2.5, peso_mat: 1.0, peso_red: 3.0 },
+    //     { name: "Ecologia", peso_cie: 3.5, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 2.5, peso_red: 1.5 },
+    //     { name: "Engenharia Agrícola e Ambiental", peso_cie: 3.0, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 3.0, peso_red: 1.5 },
+    //     { name: "Engenharia de Pesca", peso_cie: 4.0, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 2.0, peso_red: 1.5 },
+    //     { name: "Engenharia de Petróleo", peso_cie: 3.0, peso_hum: 1.0, peso_lin: 1.0, peso_mat: 3.0, peso_red: 2.0 },
+    //     {name: "Engenharia Florestal", peso_cie: 3.0, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 3.0, peso_red: 1.5},
+    //     { name: "Interdisciplinar em Ciência e Tecnologia", peso_cie: 2.5, peso_hum: 1.0, peso_lin: 2.0, peso_mat: 3.0, peso_red: 1.5},
+    //     { name: "Medicina", peso_cie: 3.5, peso_hum: 2.0, peso_lin: 2.0, peso_mat: 1.0, peso_red: 1.5},
+    //     { name: "Medicina Veterinária", peso_cie: 4.0, peso_hum: 2.0, peso_lin: 1.5, peso_mat: 1.0, peso_red: 1.5},
+    //     { name: "Zootecnia", peso_cie: 3.5, peso_hum: 1.0, peso_lin: 2.0, peso_mat: 1.5, peso_red: 2.0 },
 
+    //   ]
+    
+    // },
+      { name: "Sobral", code: "003",
+      courses: [
+        {name: "Ciências Econômicas", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Engenharia de Computação", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Finanças", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Medicina", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Música", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Odontologia", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+        {name: "Psicologia", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+ 
+      ]
+    },
+      { name: "Russas", code: "004",
+      courses: [
+    {name: "Ciência da Computação", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+    {name: "Engenharia Civil", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+    {name: "Engenharia da Produção", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+    {name: "Engenharia de Software", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+    {name: "Engenharia da Mecânica", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+
+   ]
+    
+    },
+    { name: "Quixadá", code: "005",
+    courses: [
+      {name: "Ciência da Computação", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+      {name: "Engenharia de Computação", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+      {name: "Engenharia de Software", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+      {name: "Design Digital", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+      {name: "Redes de Computadores", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+      {name: "Sistemas de Informação", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+ ]
+  
+  },
+  { name: "Crateús", code: "006",
+    courses: [
+      {name: "Ciência da Computação", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+      {name: "Engenharia Civil", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+      {name: "Engenharia Ambiental", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+      {name: "Engenharia de Minas", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+      {name: "Sistemas de Informação", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+      {name: "Engenharia Ambiental e Sanitária", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+ ]
+  
+  },
+  { name: "Itapajé", code: "007",
+  courses: [
+    {name: "Análise e Desenvolvimento de Sistemas", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+    {name: "Segurança da Informação", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+    {name: "Ciência de Dados", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1},
+
+]
+
+},
+    ],
   },
 ];
 
