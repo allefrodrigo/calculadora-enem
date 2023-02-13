@@ -20,15 +20,25 @@ const universities = [
     code: "001",
     name: "UFERSA",
     campus: [
-      { name: "Principal", code: "002",
+      { name: "Mossoró", code: "002",
       courses: [
+       
+        {name: "Administração", peso_cie: 1.0, peso_hum: 3.0, peso_lin: 2.0, peso_mat: 2.0, peso_red: 2.0},
+        {name: "Agronomia", peso_cie: 3.0, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 3.0, peso_red: 1.5},
+        {name: "Biotecnologia", peso_cie: 3.0, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 3.0, peso_red: 1.5},
+        {name: "Ciência da Computação", peso_cie: 1.0, peso_hum: 2.5, peso_lin: 3.5, peso_mat: 1.5, peso_red: 1.5},
         { name: "Ciências Contábeis", peso_cie: 1.0, peso_hum: 3.5, peso_lin: 1.0, peso_mat: 2.5, peso_red: 2.0 },
-        { name: "Computação e Informática", peso_cie: 1.0, peso_hum: 2.5, peso_lin: 3.5, peso_mat: 1.5, peso_red: 1.5 },
         { name: "Direito", peso_cie: 1.0, peso_hum: 2.5, peso_lin: 2.5, peso_mat: 1.0, peso_red: 3.0 },
         { name: "Ecologia", peso_cie: 3.5, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 2.5, peso_red: 1.5 },
         { name: "Engenharia Agrícola e Ambiental", peso_cie: 3.0, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 3.0, peso_red: 1.5 },
         { name: "Engenharia de Pesca", peso_cie: 4.0, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 2.0, peso_red: 1.5 },
         { name: "Engenharia de Petróleo", peso_cie: 3.0, peso_hum: 1.0, peso_lin: 1.0, peso_mat: 3.0, peso_red: 2.0 },
+        {name: "Engenharia Florestal", peso_cie: 3.0, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 3.0, peso_red: 1.5},
+        { name: "Interdisciplinar em Ciência e Tecnologia", peso_cie: 2.5, peso_hum: 1.0, peso_lin: 2.0, peso_mat: 3.0, peso_red: 1.5},
+        { name: "Medicina", peso_cie: 3.5, peso_hum: 2.0, peso_lin: 2.0, peso_mat: 1.0, peso_red: 1.5},
+        { name: "Medicina Veterinária", peso_cie: 4.0, peso_hum: 2.0, peso_lin: 1.5, peso_mat: 1.0, peso_red: 1.5},
+        { name: "Zootecnia", peso_cie: 3.5, peso_hum: 1.0, peso_lin: 2.0, peso_mat: 1.5, peso_red: 2.0 },
+
       ]
     
     },
@@ -43,20 +53,21 @@ const universities = [
     },
       { name: "Pau dos Ferros", code: "004",
       courses: [
-        { name: "Engenharia Florestal", peso_cie: 3.5, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 2.5, peso_red: 1.5},
      { name: "Interdisciplinar em Ciência e Tecnologia", peso_cie: 2.5, peso_hum: 1.0, peso_lin: 2.0, peso_mat: 3.0, peso_red: 1.5},
      { name: "Interdisciplinar em Tecnologia da Informação", peso_cie: 2.0, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 3.0, peso_red: 2.5},
-     { name: "Letras Inglês", peso_cie: 1.0, peso_hum: 2.0, peso_lin: 3.0, peso_mat: 1.0, peso_red: 3.0},
-     { name: "Letras Libras", peso_cie: 1.0, peso_hum: 2.0, peso_lin: 3.0, peso_mat: 1.0, peso_red: 3.0},
-     { name: "Letras Português", peso_cie: 1.0, peso_hum: 2.0, peso_lin: 3.0, peso_mat: 1.0, peso_red: 3.0},
-     { name: "Medicina", peso_cie: 3.5, peso_hum: 2.0, peso_lin: 2.0, peso_mat: 1.0, peso_red: 1.5},
-     { name: "Medicina Veterinária", peso_cie: 4.0, peso_hum: 2.0, peso_lin: 1.5, peso_mat: 1.0, peso_red: 1.5},
-     { name: "Pedagogia", peso_cie: 1.0, peso_hum: 3.0, peso_lin: 2.0, peso_mat: 1.0, peso_red: 3.0},
-     { name: "Sistemas de Informação", peso_cie: 2.0, peso_hum: 1, peso_lin: 2.5, peso_mat: 3.0, peso_red: 1.5 },
-     { name: "Zootecnia", peso_cie: 3.5, peso_hum: 1.0, peso_lin: 2.0, peso_mat: 1.5, peso_red: 2.0 }
+     { name: "Arquitetura e Urbanismo", peso_cie: 1.0, peso_hum: 2.0, peso_lin: 3.0, peso_mat: 1.0, peso_red: 3.0},
    ]
     
     },
+    { name: "Caraúbas", code: "005",
+    courses: [
+   { name: "Interdisciplinar em Ciência e Tecnologia", peso_cie: 2.5, peso_hum: 1.0, peso_lin: 2.0, peso_mat: 3.0, peso_red: 1.5},
+   { name: "Letras Inglês", peso_cie: 1.0, peso_hum: 2.0, peso_lin: 3.0, peso_mat: 1.0, peso_red: 3.0},
+   { name: "Letras Libras", peso_cie: 1.0, peso_hum: 2.0, peso_lin: 3.0, peso_mat: 1.0, peso_red: 3.0},
+   { name: "Letras Português", peso_cie: 1.0, peso_hum: 2.0, peso_lin: 3.0, peso_mat: 1.0, peso_red: 3.0}
+ ]
+  
+  },
     ],
 
   },
