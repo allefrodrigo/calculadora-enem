@@ -356,7 +356,7 @@ function App() {
   <Box display="flex" flexDirection="column">
 
   <Typography align="left" style={{ color: "white", fontWeight: 300, fontSize: 20 }}>Sua nota para este curso ficou:</Typography>
-  <Box border={1} padding={1} style={{ background: "#FFFF", borderRadius: 1 }} width={'100%'} display="flex" flexDirection="column">
+  <Box border={1} padding={1} style={{ background: "#FFFF", borderRadius: 1 }}  display="flex" flexDirection="column">
   <Typography  align="center" style={{ color: "black", fontWeight: 500, fontSize: 40 }}>{resultado}</Typography>
     </Box>
 </Box>  
