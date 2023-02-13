@@ -11,74 +11,68 @@ import { MenuItem,Select, Box, Table,
   TableRow,
    TextField, Button, Typography, FormControl, InputLabel } from '@mui/material';
 
+
+
+
 const universities = [
  
   {
     code: "001",
     name: "UFERSA",
-    courses: [
-      { name: "Administração", peso_cie: 1.0, peso_hum: 3.0, peso_lin: 2.0, peso_mat: 2.0, peso_red: 2.0 },
-      { name: "Agronomia", peso_cie: 3.5, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 2.5, peso_red: 1.5 },
-      { name: "Arquitetura e Urbanismo", peso_cie: 1.0, peso_hum: 3.0, peso_lin: 1.0, peso_mat: 3.0, peso_red: 2.0 },
-      { name: "Biotecnologia", peso_cie: 4.5, peso_hum: 1.0, peso_lin: 2.0, peso_mat: 1.0, peso_red: 1.5 },
-      { name: "Ciência da Computação", peso_cie: 2.0, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 4.0, peso_red: 1.5 },
-      { name: "Ciências Contábeis", peso_cie: 1.0, peso_hum: 3.5, peso_lin: 1.0, peso_mat: 2.5, peso_red: 2.0 },
-      { name: "Computação e Informática", peso_cie: 1.0, peso_hum: 2.5, peso_lin: 3.5, peso_mat: 1.5, peso_red: 1.5 },
-      { name: "Direito", peso_cie: 1.0, peso_hum: 2.5, peso_lin: 2.5, peso_mat: 1.0, peso_red: 3.0 },
-      { name: "Ecologia", peso_cie: 3.5, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 2.5, peso_red: 1.5 },
-      { name: "Engenharia Agrícola e Ambiental", peso_cie: 3.0, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 3.0, peso_red: 1.5 },
-      { name: "Engenharia de Pesca", peso_cie: 4.0, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 2.0, peso_red: 1.5 },
-      { name: "Engenharia de Petróleo", peso_cie: 3.0, peso_hum: 1.0, peso_lin: 1.0, peso_mat: 3.0, peso_red: 2.0 },
-      { name: "Engenharia Florestal", peso_cie: 3.5, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 2.5, peso_red: 1.5},
-      { name: "Interdisciplinar em Ciência e Tecnologia", peso_cie: 2.5, peso_hum: 1.0, peso_lin: 2.0, peso_mat: 3.0, peso_red: 1.5},
-      { name: "Interdisciplinar em Tecnologia da Informação", peso_cie: 2.0, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 3.0, peso_red: 2.5},
-      { name: "Letras Inglês", peso_cie: 1.0, peso_hum: 2.0, peso_lin: 3.0, peso_mat: 1.0, peso_red: 3.0},
-      { name: "Letras Libras", peso_cie: 1.0, peso_hum: 2.0, peso_lin: 3.0, peso_mat: 1.0, peso_red: 3.0},
-      { name: "Letras Português", peso_cie: 1.0, peso_hum: 2.0, peso_lin: 3.0, peso_mat: 1.0, peso_red: 3.0},
-      { name: "Medicina", peso_cie: 3.5, peso_hum: 2.0, peso_lin: 2.0, peso_mat: 1.0, peso_red: 1.5},
-      { name: "Medicina Veterinária", peso_cie: 4.0, peso_hum: 2.0, peso_lin: 1.5, peso_mat: 1.0, peso_red: 1.5},
-      { name: "Pedagogia", peso_cie: 1.0, peso_hum: 3.0, peso_lin: 2.0, peso_mat: 1.0, peso_red: 3.0},
-      { name: "Sistemas de Informação", peso_cie: 2.0, peso_hum: 1, peso_lin: 2.5, peso_mat: 3.0, peso_red: 1.5 },
-      { name: "Zootecnia", peso_cie: 3.5, peso_hum: 1.0, peso_lin: 2.0, peso_mat: 1.5, peso_red: 2.0 }
-    ]
+    campus: [
+      { name: "Principal", code: "002",
+      courses: [
+        { name: "Ciências Contábeis", peso_cie: 1.0, peso_hum: 3.5, peso_lin: 1.0, peso_mat: 2.5, peso_red: 2.0 },
+        { name: "Computação e Informática", peso_cie: 1.0, peso_hum: 2.5, peso_lin: 3.5, peso_mat: 1.5, peso_red: 1.5 },
+        { name: "Direito", peso_cie: 1.0, peso_hum: 2.5, peso_lin: 2.5, peso_mat: 1.0, peso_red: 3.0 },
+        { name: "Ecologia", peso_cie: 3.5, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 2.5, peso_red: 1.5 },
+        { name: "Engenharia Agrícola e Ambiental", peso_cie: 3.0, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 3.0, peso_red: 1.5 },
+        { name: "Engenharia de Pesca", peso_cie: 4.0, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 2.0, peso_red: 1.5 },
+        { name: "Engenharia de Petróleo", peso_cie: 3.0, peso_hum: 1.0, peso_lin: 1.0, peso_mat: 3.0, peso_red: 2.0 },
+      ]
+    
+    },
+      { name: "Angicos", code: "003",
+      courses: [
+        { name: "Computação e Informática", peso_cie: 1.0, peso_hum: 2.5, peso_lin: 3.5, peso_mat: 1.5, peso_red: 1.5 },
+        { name: "Interdisciplinar em Ciência e Tecnologia", peso_cie: 2.5, peso_hum: 1.0, peso_lin: 2.0, peso_mat: 3.0, peso_red: 1.5},
+        { name: "Interdisciplinar em Tecnologia da Informação", peso_cie: 2.0, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 3.0, peso_red: 2.5},
+        { name: "Pedagogia", peso_cie: 1.0, peso_hum: 3.0, peso_lin: 2.0, peso_mat: 1.0, peso_red: 3.0},
+        { name: "Sistemas de Informação", peso_cie: 2.0, peso_hum: 1, peso_lin: 2.5, peso_mat: 3.0, peso_red: 1.5 },  
+      ]
+    },
+      { name: "Pau dos Ferros", code: "004",
+      courses: [
+        { name: "Engenharia Florestal", peso_cie: 3.5, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 2.5, peso_red: 1.5},
+     { name: "Interdisciplinar em Ciência e Tecnologia", peso_cie: 2.5, peso_hum: 1.0, peso_lin: 2.0, peso_mat: 3.0, peso_red: 1.5},
+     { name: "Interdisciplinar em Tecnologia da Informação", peso_cie: 2.0, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 3.0, peso_red: 2.5},
+     { name: "Letras Inglês", peso_cie: 1.0, peso_hum: 2.0, peso_lin: 3.0, peso_mat: 1.0, peso_red: 3.0},
+     { name: "Letras Libras", peso_cie: 1.0, peso_hum: 2.0, peso_lin: 3.0, peso_mat: 1.0, peso_red: 3.0},
+     { name: "Letras Português", peso_cie: 1.0, peso_hum: 2.0, peso_lin: 3.0, peso_mat: 1.0, peso_red: 3.0},
+     { name: "Medicina", peso_cie: 3.5, peso_hum: 2.0, peso_lin: 2.0, peso_mat: 1.0, peso_red: 1.5},
+     { name: "Medicina Veterinária", peso_cie: 4.0, peso_hum: 2.0, peso_lin: 1.5, peso_mat: 1.0, peso_red: 1.5},
+     { name: "Pedagogia", peso_cie: 1.0, peso_hum: 3.0, peso_lin: 2.0, peso_mat: 1.0, peso_red: 3.0},
+     { name: "Sistemas de Informação", peso_cie: 2.0, peso_hum: 1, peso_lin: 2.5, peso_mat: 3.0, peso_red: 1.5 },
+     { name: "Zootecnia", peso_cie: 3.5, peso_hum: 1.0, peso_lin: 2.0, peso_mat: 1.5, peso_red: 2.0 }
+   ]
+    
+    },
+    ],
+
   },
-  {
-    code: "002",
-    name: "UFERSA - Angicos",
-    courses: [
-      { name: "Computação e Informática", peso_cie: 1.0, peso_hum: 2.5, peso_lin: 3.5, peso_mat: 1.5, peso_red: 1.5 },
-      { name: "Interdisciplinar em Ciência e Tecnologia", peso_cie: 2.5, peso_hum: 1.0, peso_lin: 2.0, peso_mat: 3.0, peso_red: 1.5},
-      { name: "Interdisciplinar em Tecnologia da Informação", peso_cie: 2.0, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 3.0, peso_red: 2.5},
-      { name: "Pedagogia", peso_cie: 1.0, peso_hum: 3.0, peso_lin: 2.0, peso_mat: 1.0, peso_red: 3.0},
-      { name: "Sistemas de Informação", peso_cie: 2.0, peso_hum: 1, peso_lin: 2.5, peso_mat: 3.0, peso_red: 1.5 },  
-    ]
-  },
-  {
-    code: "003",
-    name: "UFERSA - Caraúbas",
-    courses: [
-      { name: "Interdisciplinar em Ciência e Tecnologia", peso_cie: 2.5, peso_hum: 1.0, peso_lin: 2.0, peso_mat: 3.0, peso_red: 1.5},
-      { name: "Interdisciplinar em Tecnologia da Informação", peso_cie: 2.0, peso_hum: 1.0, peso_lin: 1.5, peso_mat: 3.0, peso_red: 2.5},
-      { name: "Ciência de Computação", peso_lin: 1, peso_red: 1, peso_mat: 1, peso_cie: 1, peso_hum: 1 },
-      { name: "Ciência e Tecnologia", peso_lin: 4, peso_red: 3, peso_mat: 5, peso_cie: 3, peso_hum: 5 },
-      { name: "Administração", peso_lin: 4, peso_red: 3, peso_mat: 5, peso_cie: 3, peso_hum: 5 },
-    ]
-  },
-  {
-    code: "003",
-    name: "UERN",
-    courses: [
-      { name: "Ciência de Computação", peso_lin: 4, peso_red: 3, peso_mat: 5, peso_cie: 3, peso_hum: 5 },
-      { name: "Ciência e Tecnologia", peso_lin: 4, peso_red: 3, peso_mat: 5, peso_cie: 3, peso_hum: 5 },
-      { name: "Administração", peso_lin: 4, peso_red: 3, peso_mat: 5, peso_cie: 3, peso_hum: 5 },
-    ]
-  }
 ];
 
 interface University {
-  name: string;
-  code: string;
-}
+    code: string,
+    name: string,
+    campus: [
+      { name: string, code: string,
+      courses: [
+        { name: string, peso_cie: number, peso_hum: number, peso_lin:number, peso_mat: number, peso_red: number },
+      ]
+      }
+    ]
+    }
 
 
 
@@ -87,6 +81,7 @@ function App() {
 
 
 
+  const [universidades, setUniversidades] = useState<University[]>([]);
 
   const inputRef1 = useRef(null);
   const inputRef2 = useRef(null);
@@ -124,20 +119,14 @@ function App() {
 
 
   const [selectedUniversity, setSelectedUniversity] = useState("");
+  const [selectedCampus, setSelectedCampus] = useState("");
+
   const [selectedCourse, setSelectedCourse] = useState("");
 
-  const handleUniversityChange = (event:any) => {
-    setSelectedUniversity(event.target.value);
-    setSelectedCourse("");
-
-  };
-
-  const handleCourseChange = (event:any) => {
-
-    setSelectedCourse(event.target.value)
-  };
 
 
+
+  
   
   const onClickCalculate = () => {
     let acumulador = 0;
@@ -146,10 +135,16 @@ function App() {
     );
     if (!selectedUniversityObject) return;
 
-    const selectedCourseObject = selectedUniversityObject.courses.find(
+    const selectedCampusObject = selectedUniversityObject.campus.find(
+      (campus) => campus.name === selectedCampus
+    );
+    if (!selectedCampusObject) return;
+
+    const selectedCourseObject = selectedCampusObject.courses.find(
       (course) => course.name === selectedCourse
     );
     if (!selectedCourseObject) return;
+
     const pesoNotas = selectedCourseObject.peso_cie + selectedCourseObject.peso_hum + selectedCourseObject.peso_mat + selectedCourseObject.peso_red + selectedCourseObject.peso_lin;
     acumulador += notas[0].nota * selectedCourseObject.peso_cie;
     acumulador += notas[1].nota * selectedCourseObject.peso_hum;
@@ -157,9 +152,10 @@ function App() {
     acumulador += notas[3].nota * selectedCourseObject.peso_red;
     acumulador += notas[4].nota * selectedCourseObject.peso_lin;
     const media = acumulador / pesoNotas;
-    console.log(acumulador);
+    console.log(media);
     setResultado(media);
   };
+
 
 
 
@@ -180,7 +176,7 @@ function App() {
   };
 
   return (
-<form onSubmit={handleSubmit(onClickCalculate)} >
+<form  >
 <Box
         component="img"
         width={'50%'}
@@ -247,7 +243,7 @@ function App() {
               id="university-select"
 
               value={selectedUniversity}
-              onChange={handleUniversityChange}
+              onChange={(e) => setSelectedUniversity(e.target.value)}
               defaultValue="Selecione a Universidade"
               >
               {universities.map((university) => (
@@ -259,49 +255,71 @@ function App() {
             </FormControl>
           </Box>
         </Box>
-
-
         { selectedUniversity !== "" ? (
         <Box  flexDirection='column' display='flex'  alignItems="top">
 
-          <Box  display='flex'  flexDirection="column"   >
-            <Typography align='left' sx={{ color: "white", fontWeight: 300, fontSize: 20 }}>Selecione um curso</Typography>
-            <Box border={1} sx={{background: '#FFFF', borderRadius: 1 }} display='flex'  flexDirection="column"  >
-              <FormControl disabled={!selectedUniversity}>
+<Box display="flex" flexDirection="column">
+  <Typography align="left" style={{ color: "white", fontWeight: 300, fontSize: 20 }}>Selecione um campus</Typography>
+  <Box border={1} style={{ background: "#FFFF", borderRadius: 1 }} display="flex" flexDirection="column">
+ 
+  <FormControl disabled={!selectedUniversity}>
+  <Select
+    labelId="select-campus"
+    id="select-campus"
+    value={selectedCampus}
+    onChange={(e) => setSelectedCampus(e.target.value)}
+    disabled={!selectedUniversity}
+  >
+          {universities
+                    .find(
+                      (university) => university.code === selectedUniversity
+                    )
+                    ?.campus.map((course) => (
+                      <MenuItem key={course.name} value={course.name}>
+                        {course.name}
+                      </MenuItem>
+                    ))}
+  </Select>
+</FormControl>
 
-                  <Select
+ 
+  </Box>
+</Box>
 
-                    labelId="course-select-label"
-                    id="course-select"
-                    value={selectedCourse}
-                    onChange={handleCourseChange}
-                    disabled={!selectedUniversity}
+</Box>) : null}
 
-      
+{ selectedCampus !== "" ? (
 
-                  >
-                    {selectedUniversity &&
-                      universities
-                        .find((university:any) => university.code === selectedUniversity)
-                        .courses.map((course:any) => (
-                          <MenuItem key={course.name} value={course.name}>
-                            {course.name}
-                          </MenuItem>
-                        ))}
-                  </Select>
-              </FormControl>
-            </Box>
-          </Box>
-<Button onClick={onClickCalculate} variant="contained" type="submit" sx={{ width: '100%', marginTop: 2, marginBottom: 2, background: '#FFF', color: '#000000' }}>Calcular Média</Button>
-          <Typography align='left' sx={{ color: "white", fontWeight: 300, fontSize: 20 }}>Sua média é:</Typography>
-          <Box padding={1} border={1} sx={{background: '#FFFF', borderRadius: 1 }} display='flex'  flexDirection="column"  >
-            <Typography align='center' sx={{ color: "black", fontWeight: 300, fontSize: 42 }}>{resultado}</Typography>
-          </Box>
+<Box display="flex" flexDirection="column">
+  <Typography align="left" style={{ color: "white", fontWeight: 300, fontSize: 20 }}>Selecione um curso</Typography>
+  <Box border={1} style={{ background: "#FFFF", borderRadius: 1 }} display="flex" flexDirection="column">
+  <FormControl disabled={!selectedCampus}>
+  <Select
+    labelId="select-course-label"
+    id="select-course"
+    value={selectedCourse}
+    onChange={(e) => setSelectedCourse(e.target.value)}
+    disabled={!selectedCampus}
+  >
+    {universities
+      .find((university) => university.code === selectedUniversity)
+      ?.campus.find((campus) => campus.name === selectedCampus)
+      ?.courses.map((course) => (
+        <MenuItem key={course.name} value={course.name}>
+          {course.name}
+        </MenuItem>
+      ))}
+  </Select>
+</FormControl>
+  </Box>
+</Box>
 
-        </Box>
 
-        ) : <></>
-                  }
+) : null}
+
+<Button variant="contained" onClick={() => {onClickCalculate()}} style={{ background: "#FF0000", color: "white", marginTop: 10, marginBottom: 10, width: '100%' }}>
+  calcular
+</Button>
 
       </Box>
     </Box>
