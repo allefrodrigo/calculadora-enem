@@ -153,11 +153,12 @@ function App() {
     if (!selectedCourseObject) return;
 
     const pesoNotas = selectedCourseObject.peso_cie + selectedCourseObject.peso_hum + selectedCourseObject.peso_mat + selectedCourseObject.peso_red + selectedCourseObject.peso_lin;
-    acumulador += notas[0].nota * selectedCourseObject.peso_cie;
+    acumulador += notas[0].nota * selectedCourseObject.peso_lin;
     acumulador += notas[1].nota * selectedCourseObject.peso_hum;
-    acumulador += notas[2].nota * selectedCourseObject.peso_mat;
-    acumulador += notas[3].nota * selectedCourseObject.peso_red;
-    acumulador += notas[4].nota * selectedCourseObject.peso_lin;
+    acumulador += notas[2].nota * selectedCourseObject.peso_cie;
+    acumulador += notas[3].nota * selectedCourseObject.peso_mat;
+    acumulador += notas[4].nota * selectedCourseObject.peso_red;
+
     const media = acumulador / pesoNotas;
     console.log(media);
     setNotaCalculada(true)
@@ -328,7 +329,7 @@ function App() {
 </FormControl>
   </Box>
   { selectedCourse !== "" ? (
-  <Button disabled={!allNotesFilled} onClick={onClickCalculate} variant="contained" style={{color: "white", marginTop: 10 }}>Calcular</Button>) : null}
+  <Button disabled={!allNotesFilled} onClick={onClickCalculate} variant="contained" style={{color: "white", marginTop: 10, background: allNotesFilled ? ('#18cd36') : ('#A2a2a2') }}>Calcular</Button>) : null}
   
 </Box>
 
