@@ -170,10 +170,10 @@ function App() {
     acumulador += notas[3].nota * selectedCourseObject.peso_mat;
     acumulador += notas[4].nota * selectedCourseObject.peso_red;
 
-    const media = acumulador / pesoNotas;
+    const media = parseFloat((acumulador / pesoNotas).toFixed(2));
     console.log(media);
     setNotaCalculada(true)
-    setResultado(media.toFixed(2));
+    setResultado(media);
   };
 
 
