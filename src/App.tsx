@@ -173,7 +173,7 @@ function App() {
     const media = acumulador / pesoNotas;
     console.log(media);
     setNotaCalculada(true)
-    setResultado(media);
+    setResultado(media.toFixed(2));
   };
 
 
