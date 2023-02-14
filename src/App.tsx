@@ -274,7 +274,64 @@ const universities = [
       ]
       }
   ]
-  }
+},
+{
+  code: "005",
+  name: "UFPB",
+  campus: [
+    { name: "Campus Sede", code: "001",
+    courses: [
+  { name: "Medicina", peso_cie: 3, peso_hum: 1.5, peso_lin: 1.5, peso_mat: 1, peso_red: 1.5 },
+  { name: "Administração", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+  { name: "Arquivologia", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+  { name: "Artes Visuais", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+  { name: "Biblioteconomia", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+  { name: "Ciência da Computação", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+  { name: "Ciência da Informação", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+  { name: "Ciências Atuariais", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+  { name: "Ciências Contábeis", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+  { name: "Ciências Econômicas", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+  { name: "Ciências Sociais", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+  { name: "Comunicação em Mídias Digitais", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+  { name: "Comunicação Institucional", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+  { name: "Design", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+  { name: "Direito", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+  { name: "Enfermagem", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+  { name: "Engenharia Civil", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+{ name: "Engenharia de Alimentos", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+{ name: "Engenharia de Produção", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+{ name: "Engenharia Elétrica", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+{ name: "Engenharia Mecânica", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+{ name: "Estatística", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+{ name: "Farmácia", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+{ name: "Filosofia", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+{ name: "Física", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+{ name: "Geografia", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+{ name: "Geologia", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+{ name: "Gestão Pública", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+{ name: "História", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+{ name: "Hotelaria", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+{ name: "Jornalismo", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 1, peso_red: 1 },
+{ name: "Letras - Língua Espanhola e Literaturas", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 0, peso_red: 1 },
+{ name: "Letras - Língua Francesa e Literaturas", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 0, peso_red: 1 },
+{ name: "Letras - Língua Inglesa e Literaturas", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 0, peso_red: 1 },
+{ name: "Letras - Língua Portuguesa e Literaturas", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 0, peso_red: 1 },
+{ name: "Matemática", peso_cie: 1, peso_hum: 0, peso_lin: 0, peso_mat: 1, peso_red: 1 },
+{ name: "Medicina", peso_cie: 1, peso_hum: 1, peso_lin: 0, peso_mat: 1, peso_red: 1 },
+{ name: "Nutrição", peso_cie: 1, peso_hum: 1, peso_lin: 0, peso_mat: 1, peso_red: 1 },
+{ name: "Odontologia", peso_cie: 1, peso_hum: 1, peso_lin: 0, peso_mat: 0, peso_red: 1 },
+{ name: "Pedagogia", peso_cie: 0, peso_hum: 1, peso_lin: 0, peso_mat: 0, peso_red: 1 },
+{ name: "Psicologia", peso_cie: 1, peso_hum: 1, peso_lin: 0, peso_mat: 0, peso_red: 1 },
+{ name: "Química", peso_cie: 1, peso_hum: 0, peso_lin: 0, peso_mat: 1, peso_red: 1 },
+{ name: "Relações Internacionais", peso_cie: 1, peso_hum: 1, peso_lin: 1, peso_mat: 0, peso_red: 1 },
+{ name: "Serviço Social", peso_cie: 0, peso_hum: 1, peso_lin: 0, peso_mat: 0, peso_red: 1 },
+{ name: "Sistemas de Informação", peso_cie: 1, peso_hum: 0, peso_lin: 0, peso_mat: 1, peso_red: 1 },
+{ name: "Teatro", peso_cie: 0, peso_hum: 1, peso_lin: 1, peso_mat: 0, peso_red: 1 },
+  
+    ]
+    }
+]
+}
 ];
 
 interface University {
